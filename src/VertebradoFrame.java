@@ -8,10 +8,11 @@ Partes del programa
         "Camello", "Mamifero"
         "Vaca", "Mamifero" 
         "Paloma", "Ave"
-        "Tiburón", "Pez" 
+        "Tiburón", "Pez"
+        "Cocodrilo", "Reptil" 
 2. Construir la interfaz gráfica que incluye:
     - Título
-    - Una lista de vertebrados (Camello, Vaca, Paloma, Tiburón
+    - Una lista de vertebrados (Camello, Vaca, Paloma, Tiburón, Cocodrilo,Perro
     - Un botón Seleccionar
     - Un campo de texto inicialmente vacío
 3. Modificar la accion del boton Seleccionar para identificar que valor de la lista fue seleccionado y :
@@ -48,7 +49,7 @@ public class VertebradoFrame extends javax.swing.JFrame {
         jLabel1.setText("Vertebrados");
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Camello", "Vaca", "Paloma", "Tiburón" };
+            String[] strings = { "Camello", "Vaca", "Paloma", "Tiburón","Cocodrilo" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
